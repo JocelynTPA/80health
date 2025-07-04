@@ -3,3 +3,48 @@
   padding: 4rem;
   font-family: sans-serif;
 }
+
+/* Add support for the class names you're using */
+.bg-gold {
+  background-color: #FFD700;
+}
+
+.bg-charcoal {
+  background-color: #1e1e1e;
+}
+
+.text-charcoal {
+  color: #1e1e1e;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.text-gray-200 {
+  color: #e5e7eb;
+}
+
+.text-gray-400 {
+  color: #9ca3af;
+}
+
+.text-gray-500 {
+  color: #6b7280;
+}
+
+.text-gray-600 {
+  color: #4b5563;
+}
+
+.hover\:bg-gold:hover {
+  background-color: #FFD700;
+}
+
+.hover\:text-charcoal:hover {
+  color: #1e1e1e;
+}
