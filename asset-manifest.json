@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/80health/static/css/main.473e6831.css",
+    "main.js": "/80health/static/js/main.99814811.js",
+    "index.html": "/80health/index.html",
+    "main.473e6831.css.map": "/80health/static/css/main.473e6831.css.map",
+    "main.99814811.js.map": "/80health/static/js/main.99814811.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.473e6831.css",
+    "static/js/main.99814811.js"
+  ]
+}
