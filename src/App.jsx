@@ -1,6 +1,6 @@
 
 import { Button } from './components/ui/button.jsx'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './components/ui/card.jsx'
 import { Input } from './components/ui/input.jsx'
 import { Textarea } from './components/ui/textarea.jsx'
 import { Heart, ArrowRight, CheckCircle } from 'lucide-react'
