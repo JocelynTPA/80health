@@ -93,43 +93,47 @@ function App() {
 </section>
 
           {/* Comment ça marche */}
-          <section className="py-20 bg-[#1A1C1D] relative">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-white mb-2">Comment ça fonctionne</h2>
-              <div className="w-16 h-1 bg-gold mx-auto rounded"></div>
-            </div>
+          <section className="py-20 w-full bg-[#1A1C1D]">
+  <div className="text-center mb-12">
+    <h2 className="text-3xl font-bold text-white mb-2">Comment ça fonctionne</h2>
+    <div className="w-16 h-1 bg-gold mx-auto rounded"></div>
+  </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto px-4">
-              {[
-                {
-                  number: '1',
-                  title: 'Évaluation',
-                  desc: 'Analyse de ton niveau actuel et de tes objectifs pour une base solide',
-                },
-                {
-                  number: '2',
-                  title: 'Plan sur mesure',
-                  desc: 'Programme 100% personnalisé selon ton profil et ton emploi du temps',
-                },
-                {
-                  number: '3',
-                  title: 'Suivi & ajustement',
-                  desc: 'Mesure de tes progrès et ajustement continu pour des résultats durables',
-                },
-              ].map((step, idx) => (
-                <div
-                  key={idx}
-                  className="bg-[#131415] rounded-2xl p-6 text-center text-white shadow-md hover:shadow-xl transform hover:-translate-y-1 transition duration-300"
-                >
-                  <div className="w-10 h-10 bg-gold text-charcoal font-bold rounded-full flex items-center justify-center mx-auto mb-4">
-                    {step.number}
-                  </div>
-                  <h3 className="font-semibold text-md mb-2">{step.title}</h3>
-                  <p className="text-gray-300 text-sm leading-relaxed">{step.desc}</p>
-                </div>
-              ))}
-            </div>
-          </section>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto px-4">
+    {[
+      {
+        number: '1',
+        title: 'Évaluation',
+        desc: 'Analyse de ton niveau actuel et de tes objectifs pour une base solide',
+      },
+      {
+        number: '2',
+        title: 'Plan sur mesure',
+        desc: 'Programme 100% personnalisé selon ton profil et ton emploi du temps',
+      },
+      {
+        number: '3',
+        title: 'Suivi & ajustement',
+        desc: 'Mesure de tes progrès et ajustement continu pour des résultats durables',
+      },
+    ].map((step, idx) => (
+      <div
+        key={idx}
+        className="group bg-[#131415] rounded-2xl p-6 text-center text-white shadow-md hover:shadow-xl transform hover:-translate-y-1 transition duration-300"
+      >
+        <div className="w-10 h-10 bg-gold text-charcoal font-bold rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:shadow-gold transition-all duration-300">
+          {step.number}
+        </div>
+        <h3 className="font-semibold text-md mb-2 group-hover:text-gold transition-colors duration-300">
+          {step.title}
+        </h3>
+        <p className="text-gray-300 text-sm leading-relaxed group-hover:text-gray-100 transition-colors duration-300">
+          {step.desc}
+        </p>
+      </div>
+    ))}
+  </div>
+</section>
 
           {/* Formulaire de contact */}
           <div className="max-w-2xl mx-auto mt-20">
