@@ -24,28 +24,29 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0">
-          <img 
-            src={heroFitness} 
-            alt="Fitness Training" 
-            className="w-full h-full object-cover object-top md:object-center"
-          />
-          <div className="absolute inset-0 bg-black bg-opacity-70"></div>
-        </div>
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="text-white">
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-              Transform Your Health
-            </h1>
-            <p className="text-xl mb-8 text-gray-200 max-w-2xl mx-auto">
-              Premium personal fitness coaching that combines expert guidance with smart technology.
-            </p>
-          <div className="flex justify-center mt-6">
-            <Button className="bg-gold text-charcoal hover:bg-white hover:text-charcoal px-6 py-2 rounded-md flex items-center gap-2 text-base font-medium">
-              Start Your Journey
-              <ArrowRight className="h-5 w-5" />
-            </Button>
+      <section className="relative h-[600px] overflow-hidden">
+  <div className="absolute inset-0">
+    <img 
+      src={heroFitness} 
+      alt="Fitness Training" 
+      className="w-full h-full object-cover object-top md:object-center"
+    />
+    <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+  </div>
+
+  <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col items-center justify-center text-center">
+    <div className="text-white">
+      <h1 className="text-4xl lg:text-6xl font-bold mb-6">
+        Transform Your Health
+      </h1>
+      <p className="text-xl mb-8 text-gray-200 max-w-2xl mx-auto">
+        Premium personal fitness coaching that combines expert guidance with smart technology.
+      </p>
+      <div className="flex justify-center">
+        <Button className="bg-gold text-charcoal hover:bg-white hover:text-charcoal px-6 py-2 rounded-md flex items-center gap-2 text-base font-medium">
+          Start Your Journey
+          <ArrowRight className="h-5 w-5" />
+        </Button>
           </div>
         </div>
       </div> 
