@@ -7,8 +7,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        charcoal: '#1d1d1f',
-        gold: '#f5c518'
+        charcoal: '#1A1C1D',
+        gold: '#B5A581'
       }
     }
   },
