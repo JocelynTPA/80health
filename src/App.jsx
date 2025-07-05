@@ -6,7 +6,7 @@ import { Textarea } from './components/ui/textarea.jsx'
 import { Heart, ArrowRight, CheckCircle } from 'lucide-react'
 import logo from './assets/80health-logo.png'
 import heroFitness from './assets/hero-fitness.jpg'
-import './App.css'
+
 
 function App() {
   return (
