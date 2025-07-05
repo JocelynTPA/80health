@@ -48,6 +48,7 @@ function App() {
             </Button>
           </div>
         </div>
+      </div> 
       </section>
 
       {/* Main Content */}
