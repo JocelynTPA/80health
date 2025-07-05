@@ -41,9 +41,9 @@ function App() {
             <p className="text-xl mb-8 text-gray-200 max-w-2xl mx-auto">
               Premium personal fitness coaching that combines expert guidance with smart technology.
             </p>
-            <Button className="bg-gold text-white hover:bg-white hover:text-charcoal px-6 py-3 rounded-md flex flex-col items-center">
-              <span className="text-base">Start Your Journey</span>
-              <ArrowRight className="h-5 w-5 mt-1" />
+            <Button className="bg-gold text-charcoal hover:bg-white hover:text-charcoal px-6 py-2 rounded-md flex items-center justify-center gap-2 text-base font-medium">
+              Start Your Journey
+              <ArrowRight className="h-5 w-5" />
             </Button>
           </div>
         </div>
