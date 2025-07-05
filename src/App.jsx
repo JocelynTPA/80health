@@ -29,7 +29,7 @@ function App() {
           <img 
             src={heroFitness} 
             alt="Fitness Training" 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-top md:object-center"
           />
           <div className="absolute inset-0 bg-black bg-opacity-70"></div>
         </div>
