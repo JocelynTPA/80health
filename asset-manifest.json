@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/80health/static/css/main.1481fbac.css",
-    "main.js": "/80health/static/js/main.9b49273f.js",
+    "main.js": "/80health/static/js/main.19c4b93c.js",
+    "static/media/hero-fitness.jpg": "/80health/static/media/hero-fitness.b1d538d069ccb141ed8c.jpg",
     "static/media/80health-logo.png": "/80health/static/media/80health-logo.be92de01d9eca16b8ff4.png",
-    "static/media/hero-fitness.jpg": "/80health/static/media/hero-fitness.9beaae8dbaba9c04784d.jpg",
     "index.html": "/80health/index.html",
     "main.1481fbac.css.map": "/80health/static/css/main.1481fbac.css.map",
-    "main.9b49273f.js.map": "/80health/static/js/main.9b49273f.js.map"
+    "main.19c4b93c.js.map": "/80health/static/js/main.19c4b93c.js.map"
   },
   "entrypoints": [
     "static/css/main.1481fbac.css",
-    "static/js/main.9b49273f.js"
+    "static/js/main.19c4b93c.js"
   ]
 }
