@@ -132,9 +132,9 @@ function App() {
                 <Input placeholder="Email Address" type="email" />
                 <Input placeholder="Phone Number" type="tel" />
                 <Textarea placeholder="Tell us about your fitness goals..." rows={3} />
-                <Button className="w-full bg-charcoal text-white hover:bg-gold hover:text-charcoal">
-                  Get Started
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                <Button className="w-full rounded-xl py-4 bg-charcoal text-white hover:bg-gold hover:text-charcoal flex items-center justify-center space-x-2">
+                  <span>Get Started</span>
+                  <ArrowRight className="h-5 w-5" />
                 </Button>
               </CardContent>
             </Card>
