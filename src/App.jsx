@@ -50,57 +50,77 @@ function App() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* What We Offer */}
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-charcoal mb-6 relative inline-block after:content-[''] after:absolute after:w-20 after:h-1 after:bg-gold after:rounded-full after:left-1/2 after:-translate-x-1/2 after:-bottom-3">
-              What We Offer
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-              <div className="bg-light rounded-2xl p-8 shadow-md hover:shadow-xl transition-all">
-                <div className="w-16 h-16 bg-charcoal rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Heart className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Personal Training</h3>
-                <p className="text-gray-600">Customized workout plans tailored to your goals</p>
-              </div>
-
-              <div className="bg-light rounded-2xl p-8 shadow-md hover:shadow-xl transition-all">
-                <div className="w-16 h-16 bg-gold rounded-full flex items-center justify-center mx-auto mb-4">
-                  <CheckCircle className="h-8 w-8 text-charcoal" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Nutrition Guidance</h3>
-                <p className="text-gray-600">Expert meal planning and dietary recommendations</p>
-              </div>
-
-              <div className="bg-light rounded-2xl p-8 shadow-md hover:shadow-xl transition-all">
-                <div className="w-16 h-16 bg-charcoal rounded-full flex items-center justify-center mx-auto mb-4">
-                  <ArrowRight className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Progress Tracking</h3>
-                <p className="text-gray-600">Smart analytics to monitor your fitness journey</p>
-              </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+  {[
+    {
+      icon: <Heart className="h-6 w-6 text-white" />,
+      bg: 'bg-charcoal',
+      title: 'Personal Training',
+      desc: 'Customized workout plans tailored to your goals',
+    },
+    {
+      icon: <CheckCircle className="h-6 w-6 text-charcoal" />,
+      bg: 'bg-gold',
+      title: 'Nutrition Guidance',
+      desc: 'Expert meal planning and dietary recommendations',
+    },
+    {
+      icon: <ArrowRight className="h-6 w-6 text-white" />,
+      bg: 'bg-charcoal',
+      title: 'Progress Tracking',
+      desc: 'Smart analytics to monitor your fitness journey',
+    },
+  ].map((item, i) => (
+    <div
+      key={i}
+      className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition text-center border border-gray-100"
+    >
+      <div
+        className={`w-12 h-12 ${item.bg} rounded-full flex items-center justify-center mx-auto mb-4`}
+      >
+        {item.icon}
+      </div>
+      <h3 className="text-md font-semibold text-charcoal mb-2">{item.title}</h3>
+      <p className="text-gray-500 text-sm">{item.desc}</p>
+    </div>
             </div>
           </div>
 
           {/* How It Works */}
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-charcoal mb-12 relative inline-block after:content-[''] after:absolute after:w-20 after:h-1 after:bg-gold after:rounded-full after:left-1/2 after:-translate-x-1/2 after:-bottom-3">
-              How It Works
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-              {[1, 2, 3].map((step, i) => (
-                <div key={step} className="bg-charcoal text-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-all">
-                  <div className="w-12 h-12 bg-gold rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-xl font-bold text-charcoal">{step}</span>
-                  </div>
-                  <h3 className="text-lg font-semibold mb-2">
-                    {step === 1 ? 'Assessment' : step === 2 ? 'Custom Plan' : 'Track Progress'}
-                  </h3>
-                  <p className="text-gray-300">
-                    {step === 1 && 'We evaluate your current fitness level and goals'}
-                    {step === 2 && 'Your trainer creates a personalized program'}
-                    {step === 3 && 'Monitor results and adjust your plan'}
-                  </p>
-                </div>
+          <div className="bg-[#1A1C1D] py-20 rounded-xl">
+  <h2 className="text-3xl font-bold text-white text-center mb-2">
+    How It Works
+  </h2>
+  <div className="w-20 h-1 bg-gold mx-auto mb-10 rounded"></div>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 max-w-5xl mx-auto">
+    {[
+      {
+        step: '1',
+        title: 'Assessment',
+        desc: 'We evaluate your current fitness level and goals to create the perfect foundation for success',
+      },
+      {
+        step: '2',
+        title: 'Custom Plan',
+        desc: 'Your trainer creates a personalized program designed specifically for your unique needs and objectives',
+      },
+      {
+        step: '3',
+        title: 'Track Progress',
+        desc: 'Monitor results and adjust your plan continuously to ensure optimal progress and lasting results',
+      },
+    ].map((item, i) => (
+      <div
+        key={i}
+        className="bg-[#131415] rounded-2xl p-6 text-center text-white shadow-md"
+      >
+        <div className="w-10 h-10 bg-gold rounded-full flex items-center justify-center mx-auto mb-4 text-charcoal font-bold">
+          {item.step}
+        </div>
+        <h3 className="font-semibold text-md mb-2">{item.title}</h3>
+        <p className="text-sm text-gray-300">{item.desc}</p>
+      </div>
               ))}
             </div>
           </div>
